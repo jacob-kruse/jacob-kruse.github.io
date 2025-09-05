@@ -1,2 +1,2 @@
-# personal_website
+# jacob-kruse.github.io
 My Personal Website! 
