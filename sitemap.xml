@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://jacob-kruse.github.io/index.html</loc>
+    <loc>https://jacob-kruse.github.io/</loc>
     <lastmod>2025-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://jacob-kruse.github.io/resume.html</loc>
+    <loc>https://jacob-kruse.github.io/resume</loc>
     <lastmod>2025-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jacob-kruse.github.io/projects.html</loc>
+    <loc>https://jacob-kruse.github.io/projects</loc>
     <lastmod>2025-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jacob-kruse.github.io/contact.html</loc>
+    <loc>https://jacob-kruse.github.io/contact</loc>
     <lastmod>2025-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
