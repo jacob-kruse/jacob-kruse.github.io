@@ -42,8 +42,8 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 30, 48, 243;
-  --bs-secondary-rgb: 226, 30, 128;
+  --bs-primary-rgb: 38, 7, 214;
+  --bs-secondary-rgb: 218, 47, 255;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -3031,7 +3031,7 @@ textarea.form-control-lg {
 }
 
 .btn-gradient {
-  background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+  background: linear-gradient(135deg, #2607d6 0%, #da2fff 100%);
   border: none;
   color: #fff;
   /* opacity: 0.75; */
@@ -11600,8 +11600,8 @@ html {
 }
 
 .bg-gradient-primary-to-secondary {
-  background: #e21e80;
-  background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+  background: #da2fff;
+  background: linear-gradient(135deg, #2607d6 0%, #da2fff 100%);
 }
 
 .bg-mix {
@@ -11610,7 +11610,7 @@ html {
 }
 
 .text-gradient {
-  background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+  background: -webkit-linear-gradient(135deg, #2607d6 0%, #da2fff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
