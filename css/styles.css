@@ -8238,6 +8238,21 @@ textarea.form-control-lg {
   color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-red {
+  --bs-text-opacity: 1;
+  color: var(--bs-red)
+}
+
+.text-purple {
+  --bs-text-opacity: 1;
+  color: var(--bs-purple)
+}
+
+.text-gray {
+  --bs-text-opacity: 1;
+  color: var(--bs-gray-dark)
+}
+
 .text-success {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-success-rgb), var(--bs-text-opacity)) !important;
