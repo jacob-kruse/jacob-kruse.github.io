@@ -602,6 +602,26 @@ progress {
   height: auto;
 }
 
+.education-logo {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+.education-logo-box {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education-logo-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
 .circle-img {
   width: 70px;       /* make it a square */
   height: 70px;      
@@ -7917,6 +7937,10 @@ textarea.form-control-lg {
   padding: 1.5rem !important;
 }
 
+.p-45 {
+  padding: 2rem !important;
+}
+
 .p-5 {
   padding: 3rem !important;
 }
@@ -8129,6 +8153,10 @@ textarea.form-control-lg {
   font-size: 1.1rem !important;
 }
 
+.fs-7 {
+  font-size: 0.925rem !important;
+}
+
 .fst-italic {
   font-style: italic !important;
 }
@@ -8251,6 +8279,11 @@ textarea.form-control-lg {
 .text-gray {
   --bs-text-opacity: 1;
   color: var(--bs-gray-dark)
+}
+
+.text-imeg {
+  --bs-text-opacity: 1;
+  color: #245fb8
 }
 
 .text-success {
