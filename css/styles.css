@@ -7735,6 +7735,10 @@ textarea.form-control-lg {
   margin-bottom: 3rem !important;
 }
 
+.mb-6 {
+  margin-bottom: 3.5rem !important;
+}
+
 .mb-auto {
   margin-bottom: auto !important;
 }
@@ -7998,6 +8002,11 @@ textarea.form-control-lg {
 .py-4 {
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important;
+}
+
+.py-4-5 {
+  padding-top: 1.9rem !important;
+  padding-bottom: 1.9rem !important;
 }
 
 .py-5 {
@@ -11685,13 +11694,11 @@ html {
   max-height: 40rem;
   max-width: 40rem;
 }
-.profile .profile-img {
-  height: 80vw;
-  max-height: 45rem;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* fills the box, crops evenly */
+  object-position: center; /* centers the crop instead of top-left */
 }
 .profile .dots-1 {
   position: absolute;
