@@ -882,6 +882,66 @@ progress {
 
 .g-1,
 .gx-1 {
+  --bs-gutter-x: 0.407331976vw;
+}
+
+.g-1,
+.gy-1 {
+  --bs-gutter-y: 0.539083557951vh;
+}
+
+.g-2,
+.gx-2 {
+  --bs-gutter-x: 0.814663952vw;
+}
+
+.g-2,
+.gy-2 {
+  --bs-gutter-y: 1.0781671159vh;
+}
+
+.g-3,
+.gx-3 {
+  --bs-gutter-x: 1.629327904vw;
+}
+
+.g-3,
+.gy-3 {
+  --bs-gutter-y: 2.1563342318vh;
+}
+
+.g-4,
+.gx-4 {
+  --bs-gutter-x: 2.443991856vw;
+}
+
+.g-4,
+.gy-4 {
+  --bs-gutter-y: 3.2345013477vh;
+}
+
+.g-5,
+.gx-5 {
+  --bs-gutter-x: 4.88798371vw;
+}
+
+.g-5,
+.gy-5 {
+  --bs-gutter-y: 6.4690026954vh;
+}
+
+.g-6,
+.gx-6 {
+  --bs-gutter-x: 9.77596741vw;
+}
+
+.g-6,
+.gy-6 {
+  --bs-gutter-y: 12.938vh;
+}
+
+/* .g-1,
+.gx-1 {
   --bs-gutter-x: 0.25rem;
 }
 
@@ -938,7 +998,7 @@ progress {
 .g-6,
 .gy-6 {
   --bs-gutter-y: 6rem;
-}
+} */
 
 @media (min-width: 576px) {
   .col-sm {
@@ -7807,6 +7867,26 @@ textarea.form-control-lg {
 }
 
 .ms-1 {
+  margin-left: 0.407331976vw !important;
+}
+
+.ms-2 {
+  margin-left: 0.814663952vw !important;
+}
+
+.ms-3 {
+  margin-left: 1.629327904vw !important;
+}
+
+.ms-4 {
+  margin-left: 2.443991856vw !important;
+}
+ 
+.ms-5 {
+  margin-left: 4.88798371vw !important;
+}
+
+/* .ms-1 {
   margin-left: 0.25rem !important;
 }
 
@@ -7824,7 +7904,7 @@ textarea.form-control-lg {
 
 .ms-5 {
   margin-left: 3rem !important;
-}
+} */
 
 .ms-auto {
   margin-left: auto !important;
@@ -8014,6 +8094,31 @@ textarea.form-control-lg {
 }
 
 .px-1 {
+  padding-right: 0.407331976vw !important;
+  padding-left: 0.407331976vw !important;
+}
+
+.px-2 {
+  padding-right: 0.814663952vw !important;
+  padding-left: 0.814663952vw !important;
+}
+
+.px-3 {
+  padding-right: 1.629327904vw !important;
+  padding-left: 1.629327904vw !important;
+}
+
+.px-4 {
+  padding-right: 2.443991856vw !important;
+  padding-left: 2.443991856vw !important;
+}
+ 
+.px-5 {
+  padding-right: 4.88798371vw !important;
+  padding-left: 4.88798371vw !important;
+}
+
+/* .px-1 {
   padding-right: 0.25rem !important;
   padding-left: 0.25rem !important;
 }
@@ -8036,7 +8141,7 @@ textarea.form-control-lg {
 .px-5 {
   padding-right: 3rem !important;
   padding-left: 3rem !important;
-}
+} */
 
 .py-0 {
   padding-top: 0 !important;
@@ -8204,6 +8309,26 @@ textarea.form-control-lg {
 }
 
 .gap-1 {
+  gap: 0.407331976vw !important;
+}
+
+.gap-2 {
+  gap: 0.814663952vw !important;
+}
+
+.gap-3 {
+  gap: 1.629327904vw !important;
+}
+
+.gap-4 {
+  gap: 2.443991856vw !important;
+}
+ 
+.gap-5 {
+  gap: 4.88798371vw !important;
+}
+
+/* .gap-1 {
   gap: 0.25rem !important;
 }
 
@@ -8221,7 +8346,7 @@ textarea.form-control-lg {
 
 .gap-5 {
   gap: 3rem !important;
-}
+} */
 
 .font-monospace {
   font-family: var(--bs-font-monospace) !important;
