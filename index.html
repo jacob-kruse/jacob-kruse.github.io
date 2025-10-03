@@ -20,69 +20,66 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body class="d-flex flex-column h-100">
-        <main class="flex-shrink-0">
-            <nav class="navbar navbar-light bg-gradient-primary-to-secondary py-3">
-            <div class="container px-0 d-flex align-items-center w-100">
-                <!-- Left corner: Home image -->
-                <a href="index.html">
-                <img src="assets/img/JK Logo.png" alt="Home" class="circle-img" style="height:6.738vh; width:auto;">
-                </a>
-                <!-- Evenly spaced links -->
-                <ul class="navbar-nav d-flex flex-row justify-content-around flex-grow-1 fw-bolder ms-5">
-                <li class="nav-item mx-3"><a class="nav-link text-white" href="resume.html" style="font-size:3.0188vh;">Resume</a></li>
-                <li class="nav-item mx-3"><a class="nav-link text-white" href="projects.html" style="font-size:3.0188vh;">Projects</a></li>
-                <li class="nav-item mx-3"><a class="nav-link text-white" href="contact.html" style="font-size:3.0188vh;">Contact</a></li>
-                </ul>
-            </div>
-            </nav>
-            <!-- Header-->
-            <header class="py-4-5">
-                <div class="container px-0 pb-0">
-                    <div class="row gx-6 align-items-center justify-content-between">
-                        <div class="col-md-5">
-                            <!-- Header text content-->
-                            <div class="text-start">
-                                <h1 class="display-3 fw-bolder py-3"><span class="text-gradient d-inline">Jacob Kruse</span></h1>
-                                <div class="fs-6 text-muted mb-45">
-                                    I am currently working towards a Master's degree in  Computer Science at the University of Georgia
-                                    with an expected graduation in May 2026. I work as a  Graduate Research Assistant under Dr. Doshi
-                                    in the THINC Lab where I am researching Machine Learning Methods for Physical Robotic Systems. I
-                                    graduated from Western Illinois University in 2024 with a degree in Electrical Engineering and
-                                    have had several engineering internships to provide me with ample Robotics experience.
-                                </div>
-                                <div class="d-grid gap-3 d-flex justify-content-start mb-2">
-                                    <a class="btn btn-gradient btn px-5 py-3 me-3 fs-6 fw-bolder" href="resume.html">Resume</a>
-                                    <a class="btn btn-gradient btn px-5 py-3 fs-6 fw-bolder" href="projects.html">Projects</a>
-                                </div>
+        <nav class="navbar navbar-light bg-gradient-primary-to-secondary py-3">
+        <div class="container px-0 d-flex align-items-center w-100">
+            <!-- Left corner: Home image -->
+            <a href="index.html">
+            <img src="assets/img/JK Logo.png" alt="Home" class="circle-img" style="height:6.738vh; width:auto;">
+            </a>
+            <!-- Evenly spaced links -->
+            <ul class="navbar-nav d-flex flex-row justify-content-around flex-grow-1 fw-bolder ms-5">
+            <li class="nav-item mx-3"><a class="nav-link text-white" href="resume.html" style="font-size:3.0188vh;">Resume</a></li>
+            <li class="nav-item mx-3"><a class="nav-link text-white" href="projects.html" style="font-size:3.0188vh;">Projects</a></li>
+            <li class="nav-item mx-3"><a class="nav-link text-white" href="contact.html" style="font-size:3.0188vh;">Contact</a></li>
+            </ul>
+        </div>
+        </nav>
+        <header class="flex-fill d-flex align-items-center justify-content-center">
+            <div class="container">
+                <div class="row gx-6 align-items-center justify-content-between">
+                    <div class="col-md-5">
+                        <!-- Header text content-->
+                        <div class="text-start">
+                            <h1 class="display-3 fw-bolder py-3"><span class="text-gradient d-inline">Jacob Kruse</span></h1>
+                            <div class="fs-6 text-muted mb-45">
+                                I am currently working towards a Master's degree in  Computer Science at the University of Georgia
+                                with an expected graduation in May 2026. I work as a  Graduate Research Assistant under Dr. Doshi
+                                in the THINC Lab where I am researching Machine Learning Methods for Physical Robotic Systems. I
+                                graduated from Western Illinois University in 2024 with a degree in Electrical Engineering and
+                                have had several engineering internships to provide me with ample Robotics experience.
+                            </div>
+                            <div class="d-grid gap-3 d-flex justify-content-start mb-2">
+                                <a class="btn btn-gradient btn px-5 py-3 me-3 fs-6 fw-bolder" href="resume.html">Resume</a>
+                                <a class="btn btn-gradient btn px-5 py-3 fs-6 fw-bolder" href="projects.html">Projects</a>
                             </div>
                         </div>
-                        <div class="col-md-7 justify-content-center align-items-center">
-                            <div class="d-flex justify-content-center mt-0">
-                                <div style="height:71.42vh; overflow:hidden;">
-                                    <img class="profile-img" src="assets/img/Slideshow/Senior Design Team.jpg" alt="Profile Image" id="profileImage">
-                                    <script>
-                                        const imagePaths = [
-                                            'assets/img/Slideshow/Senior Design Team.jpg',
-                                            'assets/img/Slideshow/Me with Rock-E.png',
-                                            'assets/img/Slideshow/KUKA.jpg',
-                                            'assets/img/Slideshow/Onion.jpg',
-                                            'assets/img/Slideshow/Vehicle.jpg',
-                                        ];
-                                        let currentImageIndex = 0;
-                                        function changeImage() {
-                                            currentImageIndex = (currentImageIndex + 1) % imagePaths.length;
-                                            document.getElementById('profileImage').src = imagePaths[currentImageIndex];
-                                        }
-                                        setInterval(changeImage, 3000);
-                                    </script>
-                                </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div style="height:72vh; overflow:hidden;">
+                            <div class="w-100 d-flex justify-content-center align-items-center">
+                                <img class="profile-img" src="assets/img/Slideshow/Senior Design Team.jpg" alt="Profile Image" id="profileImage">
+                                <script>
+                                    const imagePaths = [
+                                        'assets/img/Slideshow/Senior Design Team.jpg',
+                                        'assets/img/Slideshow/Me with Rock-E.png',
+                                        'assets/img/Slideshow/KUKA.jpg',
+                                        'assets/img/Slideshow/Onion.jpg',
+                                        'assets/img/Slideshow/Vehicle.jpg',
+                                    ];
+                                    let currentImageIndex = 0;
+                                    function changeImage() {
+                                        currentImageIndex = (currentImageIndex + 1) % imagePaths.length;
+                                        document.getElementById('profileImage').src = imagePaths[currentImageIndex];
+                                    }
+                                    setInterval(changeImage, 3000);
+                                </script>
                             </div>
                         </div>
                     </div>
                 </div>
-            </header>
-        </main>
-        <footer class="bg-dark bg-opacity-25 py-2 mt-auto footer-height">
+            </div>
+        </header>
+        <footer class="bg-dark bg-opacity-25 py-2 footer-height">
             <div class="container">
                 <div class="row align-items-center justify-content-between" style="--bs-gutter-x: 0.651731161vw;">
                     <div class="col-4">
@@ -105,7 +102,7 @@
                     <div class="col-4">
                         <div class="text-end">
                             <div class="small">
-                                Last Updated: October 1, 2025
+                                Last Updated: October 3, 2025
                             </div>
                         </div>
                     </div>

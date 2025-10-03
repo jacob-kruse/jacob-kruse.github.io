@@ -722,6 +722,20 @@ progress {
   margin-top: var(--bs-gutter-y);
 }
 
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 0.2vw;
+  margin-left: 0.2vw;
+}
+.contact-row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: .5vw;
+  padding-left: .5vw;
+}
+
 .col {
   flex: 1 0 0%;
 }
@@ -7168,7 +7182,7 @@ textarea.form-control-lg {
 }
 
 .shadow {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.35) !important;
 }
 
 .shadow-sm {
