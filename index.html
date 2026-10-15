@@ -58,24 +58,64 @@
                     </div>
                     <div class="col-md-7">
                         <div style="height:72vh; overflow:hidden;">
-                            <div class="w-100 d-flex justify-content-center align-items-center">
-                                <img class="profile-img" src="assets/img/Slideshow/Senior Design Team.jpg" alt="Profile Image" id="profileImage">
-                                <script>
-                                    const imagePaths = [
-                                        'assets/img/Slideshow/Senior Design Team.jpg',
-                                        'assets/img/Slideshow/Me with Rock-E.png',
-                                        'assets/img/Slideshow/KUKA.jpg',
-                                        'assets/img/Slideshow/Onion.jpg',
-                                        'assets/img/Slideshow/Vehicle.jpg',
-                                    ];
-                                    let currentImageIndex = 0;
-                                    function changeImage() {
-                                        currentImageIndex = (currentImageIndex + 1) % imagePaths.length;
-                                        document.getElementById('profileImage').src = imagePaths[currentImageIndex];
-                                    }
-                                    setInterval(changeImage, 3000);
-                                </script>
-                            </div>
+                            <figure class="w-100 d-flex flex-column align-items-center">
+                                <div class="slideshow">
+                                    <button type="button" class="slide-arrow slide-arrow-left" id="previousImage" aria-label="Previous photo">‹</button>
+                                    <img class="profile-img" src="assets/img/Slideshow/Senior Design Team.jpg" alt="Profile Image" id="profileImage">
+                                    <figcaption class="text-center" id="profileCaption">
+                                        Senior Design Team with our autonomous vehicle Rock-E, 2024
+                                    </figcaption>
+                                    <button type="button" class="slide-arrow slide-arrow-right" id="nextImage" aria-label="Next photo">›</button>
+                                    <script>
+                                        const imagePaths = [
+                                            'assets/img/Slideshow/Senior Design Team.jpg',
+                                            'assets/img/Slideshow/Me with Rock-E.png',
+                                            'assets/img/Slideshow/Expo.jpg',
+                                            'assets/img/Slideshow/KUKA.jpg',
+                                            'assets/img/Slideshow/Onion.jpg',
+                                            'assets/img/Slideshow/Vehicle.jpg',
+                                        ];
+                                        const imageCaptions = [
+                                            "Senior Design Team with our autonomous vehicle Rock-E, 2024",
+                                            "Working on Rock-E during the testing phase, 2024",
+                                            "Conversing in front of our KUKA demo at UGA's E-Mobility Summit, 2026",
+                                            "Working with the KUKA LBR iisy for onion sorting, 2025",
+                                            "Messing with perception of onions, 2024",
+                                            "Autonomous vehicle project for engineering class, 2023",
+                                        ]
+                                        // let currentImageIndex = 0;
+                                        // function changeImage() {
+                                        //     currentImageIndex = (currentImageIndex + 1) % imagePaths.length;
+                                        //     document.getElementById('profileImage').src = imagePaths[currentImageIndex];
+                                        //     document.getElementById('profileCaption').textContent = imageCaptions[currentImageIndex];
+                                        // }
+                                        // setInterval(changeImage, 3000);
+                                        let currentImageIndex = 0;
+                                        function showImage(index) {
+                                            currentImageIndex = (index + imagePaths.length) % imagePaths.length;
+                                            document.getElementById('profileImage').src = imagePaths[currentImageIndex];
+                                            document.getElementById('profileCaption').textContent = imageCaptions[currentImageIndex];
+                                        }
+                                        function startSlideshow() {
+                                            return setInterval(() => {
+                                            showImage(currentImageIndex + 1);
+                                            }, 3000);
+                                        }
+                                        let slideshowTimer = startSlideshow();
+                                        function moveImage(direction) {
+                                            showImage(currentImageIndex + direction);
+                                            clearInterval(slideshowTimer);
+                                            slideshowTimer = startSlideshow();
+                                        }
+                                        document.getElementById('previousImage').addEventListener('click', () => {
+                                            moveImage(-1);
+                                        });
+                                        document.getElementById('nextImage').addEventListener('click', () => {
+                                            moveImage(1);
+                                        });
+                                    </script>
+                                </div>
+                            </figure>
                         </div>
                     </div>
                 </div>

@@ -2436,6 +2436,42 @@ textarea.form-control-lg {
   margin-right: 1rem;
 }
 
+.slideshow {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.slide-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+  font-size: 30px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.slide-arrow:hover {
+  background: rgba(0, 0, 0, 0.8);
+  transform: translateY(-50%) scale(1.08);
+}
+.slide-arrow-left {
+  left: 12px;
+}
+.slide-arrow-right {
+  right: 12px;
+}
+.slide-arrow:focus-visible {
+  outline: 3px solid white;
+  outline-offset: 2px;
+}
+
 .btn-check {
   position: absolute;
   clip: rect(0, 0, 0, 0);
