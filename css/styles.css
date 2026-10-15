@@ -54,7 +54,7 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: "Plus Jakarta Sans";
+  --bs-font-sans-serif: "Times New Roman";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -3140,6 +3140,15 @@ textarea.form-control-lg {
   border: none;
   color: #fff;
   /* opacity: 0.75; */
+}
+
+.btn-main {
+  background: #3d5797;
+  color: #fff;
+}
+.btn-main:hover {
+  color: #3d5797;
+  outline: solid #3d5797;
 }
 
 .btn-mix {
@@ -11909,6 +11918,10 @@ html {
   background: linear-gradient(135deg, #2607d6 0%, #da2fff 100%);
 }
 
+.bg-main {
+  background: #3d5797;
+}
+
 .bg-mix {
   background: color-mix(in srgb, #1e30f3 50%, #e21e80 50%);
   opacity: 0.85
@@ -11918,6 +11931,11 @@ html {
   background: -webkit-linear-gradient(135deg, #2607d6 0%, #da2fff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.text-main {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #3d5797;
 }
 
 .rounded-4 {
