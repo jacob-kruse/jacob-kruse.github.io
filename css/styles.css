@@ -119,6 +119,16 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   line-height: 1.2;
 }
 
+h2 a {
+  color: #3d5797;
+  text-decoration: none;
+}
+
+h2 a:hover {
+  color: #3d5797;
+  text-decoration: underline;
+}
+
 h1, .h1 {
   font-size: calc(1.375rem + 1.5vw);
 }
@@ -611,6 +621,16 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+
+.project-img {
+  display: block;
+  flex: 0 0 25%;
+  width: 25%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
 }
 
 .education-logo {
@@ -3833,19 +3853,11 @@ textarea.form-control-lg {
 }
 .nav-link:hover, .nav-link:focus {
   color: var(--bs-nav-link-hover-color);
-  /* text-decoration: underline;
-  color: currentColor !important; */
 }
 .nav-link.disabled {
   color: var(--bs-nav-link-disabled-color);
   pointer-events: none;
   cursor: default;
-}
-
-.thesis-link:hover {
-  text-decoration: underline;
-  color: #000 !important;
-  ;
 }
 
 .nav-tabs {
