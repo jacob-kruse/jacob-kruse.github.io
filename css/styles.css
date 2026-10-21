@@ -3833,11 +3833,19 @@ textarea.form-control-lg {
 }
 .nav-link:hover, .nav-link:focus {
   color: var(--bs-nav-link-hover-color);
+  /* text-decoration: underline;
+  color: currentColor !important; */
 }
 .nav-link.disabled {
   color: var(--bs-nav-link-disabled-color);
   pointer-events: none;
   cursor: default;
+}
+
+.thesis-link:hover {
+  text-decoration: underline;
+  color: #000 !important;
+  ;
 }
 
 .nav-tabs {
