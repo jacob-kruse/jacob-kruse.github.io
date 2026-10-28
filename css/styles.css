@@ -91,6 +91,24 @@
   }
 }
 
+#usa-map-container svg {
+  width: 100%;
+  height: auto;
+}
+
+#usa-map-container svg path.hover-on {
+  fill: #3d5797;
+  transition: fill 0.2s ease, transform 0.2s ease;
+  transform-box: fill-box;
+  transform-origin: center;
+  cursor: pointer;
+}
+
+#usa-map-container svg path:hover.hover-on {
+  fill: #3d5797;
+  transform: scale(1.5);
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
