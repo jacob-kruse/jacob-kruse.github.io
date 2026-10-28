@@ -98,7 +98,7 @@
 
 #usa-map-container svg path.hover-on {
   fill: #3d5797;
-  transition: fill 0.2s ease, transform 0.2s ease;
+  transition: fill 0.5s ease, transform 0.5s ease;
   transform-box: fill-box;
   transform-origin: center;
   cursor: pointer;
@@ -107,6 +107,42 @@
 #usa-map-container svg path:hover.hover-on {
   fill: #3d5797;
   transform: scale(1.5);
+}
+
+
+#usa-map-container svg .state {
+  transition: transform 0.5s ease;
+  transform-box: fill-box;
+  transform-origin: center;
+  cursor: pointer;
+}
+
+#usa-map-container svg .state path {
+  fill: #3d5797;
+  transition: fill 0.5s ease;
+}
+
+#usa-map-container svg .state:hover path {
+  fill: #3d5797;
+}
+
+#usa-map-container svg .state:hover {
+  transform: scale(3);
+}
+
+#usa-map-container svg .city {
+  fill: #fff;
+  stroke: #3d5797;
+  stroke-width: 1;
+  pointer-events: none;
+}
+
+#usa-map-container svg .city-label {
+  font-family: Arial, sans-serif;
+  font-size: 5px;
+  fill: #fff;
+  pointer-events: none;
+  user-select: none;
 }
 
 body {
