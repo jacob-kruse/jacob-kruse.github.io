@@ -118,8 +118,8 @@
 }
 
 #usa-map-container svg .city-label {
-  font-family: Arial, sans-serif;
-  font-size: 5px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.5rem;
   fill: #fff;
   pointer-events: none;
   user-select: none;
