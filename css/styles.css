@@ -96,37 +96,17 @@
   height: auto;
 }
 
-#usa-map-container svg path.hover-on {
-  fill: #3d5797;
-  transition: fill 0.5s ease, transform 0.5s ease;
-  transform-box: fill-box;
-  transform-origin: center;
-  cursor: pointer;
-}
-
-#usa-map-container svg path:hover.hover-on {
-  fill: #3d5797;
-  transform: scale(1.5);
-}
-
-
 #usa-map-container svg .state {
   transition: transform 0.5s ease;
   transform-box: fill-box;
-  transform-origin: center;
   cursor: pointer;
 }
 
 #usa-map-container svg .state path {
   fill: #3d5797;
-  transition: fill 0.5s ease;
 }
 
-#usa-map-container svg .state:hover path {
-  fill: #3d5797;
-}
-
-#usa-map-container svg .state:hover {
+#usa-map-container svg .state.enlarged {
   transform: scale(3);
 }
 
