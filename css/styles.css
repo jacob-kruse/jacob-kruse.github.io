@@ -94,6 +94,7 @@
 #usa-map-container svg {
   width: 100%;
   height: auto;
+  margin-bottom: 6.4690026954vh
 }
 
 #usa-map-container svg .state {
